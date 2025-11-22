@@ -1,9 +1,238 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>contact</title></head>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Engels811 Network Archive</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #0b0b0d;
+            font-family: Arial, sans-serif;
+            color: #ddd;
+        }
+
+        /* SIDEBAR */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background: #0e0e11;
+            border-right: 2px solid #4b0007;
+            box-shadow: 0 0 15px #4b0007;
+            padding: 20px;
+        }
+
+        #sidebar h2 {
+            color: #ff3050;
+            text-shadow: 0 0 10px #ff3050;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            margin-bottom: 8px;
+            color: #ccc;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.2s;
+            font-size: 15px;
+        }
+
+        #sidebar a:hover {
+            background: #ff1a2e55;
+            box-shadow: 0 0 10px #ff1a2e;
+            color: #fff;
+        }
+
+        #sidebar .icon {
+            width: 20px;
+            opacity: .85;
+        }
+
+        .divider {
+            height: 2px;
+            background: #4b0007;
+            margin: 20px 0;
+            box-shadow: 0 0 8px #4b0007;
+        }
+
+        /* CONTENT */
+        #content {
+            margin-left: 260px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ff3050;
+            text-shadow: 0 0 15px #ff3050;
+        }
+
+        .hero {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px #4b0007;
+        }
+
+        .section {
+            background: #111115;
+            border: 1px solid #4b0007;
+            box-shadow: 0 0 10px #4b0007;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #ff3050;
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff3050;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #0a0a0d;
+            border-top: 2px solid #4b0007;
+            margin-top: 50px;
+            box-shadow: 0 -5px 20px #4b0007;
+        }
+
+        footer img {
+            width: 120px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px #ff003c);
+        }
+
+        footer a {
+            color: #bbb;
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 820px) {
+            #sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            #content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
 <body>
-<div id="sidebar"><!-- SIDEBAR menu snippet --></div>
-<div id="content"><h1>contact</h1><p>Content placeholder.</p></div>
-<!-- Footer snippet -->
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+
+    <h2>ENGELS WIKI</h2>
+
+    <a href="index.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Startseite</a>
+    <a href="biografie.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biografie</a>
+    <a href="wonderlife_network.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Übersicht</a>
+    <a href="about.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/info.png"> Über das Projekt</a>
+    <a href="contact.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/mail.png"> Kontakt</a>
+
+    <div class="divider"></div>
+
+    <!-- Social Links (inkl. korrigiertem Twitter/X) -->
+    <a href="https://twitch.tv/engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/twitch.png"> Twitch</a>
+    <a href="https://www.youtube.com/@Engels811_TTV" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"> YouTube</a>
+    <a href="https://www.instagram.com/engels811_ttv/" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"> Instagram</a>
+    <a href="https://x.com/@ttv_engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"> Twitter / X</a>
+    <a href="https://www.facebook.com/Engels811TTV" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png"> Facebook</a>
+    <a href="https://steamcommunity.com/id/engels811_ttv/" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/steam.png"> Steam</a>
+    <a href="https://github.com/Engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"> GitHub</a>
+    <a href="https://www.getshirts.de/index.php?page=shop&id=engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/shopping-bag.png"> Merch</a>
+    <a href="https://discord.gg/wonderlife-city" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png"> WonderLife Discord</a>
+
+    <div class="divider"></div>
+
+    <div id="language-box">
+        <a href="contact.html" style="color:#ccc;">🇩🇪 Deutsch</a><br>
+        <a href="contact_en.html" style="color:#ccc;">🇬🇧 English</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div id="content">
+
+    <div class="hero">
+        <img src="assets/banner.jpg" style="width:100%;">
+    </div>
+
+    <h1>Kontakt</h1>
+
+    <div class="section">
+        <h2>Offizielle Kontaktadresse</h2>
+        <p>
+            Für allgemeine Anfragen, geschäftliche Fragen oder Community-Themen:
+        </p>
+        <p>
+            📧 <strong>E-Mail:</strong>  
+            <a href="mailto:info@engels811-ttv.com" style="color:#ff3050;">info@engels811-ttv.com</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Social Media & Streaming</h2>
+        <p>Du kannst Engels811 über folgende Plattformen erreichen:</p>
+        <ul>
+            <li>🎮 Twitch: <a href="https://twitch.tv/engels811" style="color:#ff3050;">twitch.tv/engels811</a></li>
+            <li>▶️ YouTube: <a href="https://www.youtube.com/@Engels811_TTV" style="color:#ff3050;">YouTube Kanal</a></li>
+            <li>📸 Instagram: <a href="https://www.instagram.com/engels811_ttv/" style="color:#ff3050;">@engels811_ttv</a></li>
+            <li>🐦 Twitter / X: <a href="https://x.com/@ttv_engels811" style="color:#ff3050;">@ttv_engels811</a></li>
+            <li>🕹 Steam: <a href="https://steamcommunity.com/id/engels811_ttv/" style="color:#ff3050;">Steam Profil</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>WonderLife Projekte</h2>
+        <p>
+            Für RP, Server, Bewerbungen & Community-Fragen:  
+        </p>
+        <p>
+            🌆 <strong>WonderLife Discord:</strong><br>
+            <a href="https://discord.gg/wonderlife-city" style="color:#ff3050;">discord.gg/wonderlife-city</a>
+        </p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <img src="assets/logo.png">
+    <div>ENGELS811 NETWORK WIKI</div>
+    <br>
+    <a href="impressum.html">Impressum</a> •
+    <a href="privacy_policy.html">Datenschutz</a> •
+    <a href="legal_notice.html">Rechtliches</a> •
+    <a href="contact.html">Kontakt</a> •
+    <a href="about.html">Über das Projekt</a>
+
+    <br><br>
+    <div style="color:#777; font-size:13px;">© 2025 Engels811 – All rights reserved.<br>Part of the WonderLife Network.</div>
+</footer>
+
 </body>
 </html>
