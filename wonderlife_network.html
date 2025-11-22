@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WonderLife Übersicht – ENGELS NETWORK ARCHIVE</title>
+    <title>WonderLife Übersicht – ENGELS811 NETWORK WIKI</title>
 
     <!-- SEO -->
-    <meta name="description" content="Kompakte Übersicht über alle Projekte des WonderLife Networks von Engels811.">
+    <meta name="description" content="Übersicht über alle WonderLife Projekte von Creator & Entwickler Engels811.">
     <meta property="og:title" content="WonderLife Übersicht">
-    <meta property="og:description" content="Alle Projekte des WonderLife Network in einer kompakten Liste.">
+    <meta property="og:description" content="Alle Projekte des WonderLife Networks in einer klaren, kompakten Liste.">
     <meta property="og:image" content="assets/banner.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -26,7 +26,8 @@
         #mobile-menu-btn {
             display:none;
             position:fixed;
-            top:20px; left:20px;
+            top:20px; 
+            left:20px;
             padding:10px 14px;
             background:#e0002a;
             color:white;
@@ -48,6 +49,7 @@
             border-right:2px solid #4b0007;
             overflow-y:auto;
             box-shadow:2px 0 10px rgba(0,0,0,0.5);
+            z-index:1300;
         }
 
         #sidebar h2 {
@@ -80,12 +82,52 @@
             opacity:0.8;
         }
 
+        /* LANGUAGE DROPDOWN */
+        #language-box {
+            margin-top:20px;
+        }
+
+        #language-dropdown {
+            background:#1a1a20;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 6px #4b0007;
+        }
+
+        #language-dropdown:hover {
+            background:#25252c;
+        }
+
+        #language-menu {
+            display:none;
+            margin-top:5px;
+            background:#1a1a20;
+            border:1px solid #4b0007;
+            border-radius:5px;
+            box-shadow:0 0 10px #4b0007;
+        }
+
+        #language-menu a {
+            padding:10px;
+            display:block;
+            color:#ddd;
+        }
+
+        #language-menu a:hover {
+            background:#ff1a2e55;
+            color:white;
+        }
+
         /* MOBILE SIDEBAR */
         @media(max-width:900px){
             #sidebar {
                 transform:translateX(-280px);
                 transition:.3s;
-                z-index:1500;
             }
             #sidebar.active {
                 transform:translateX(0);
@@ -112,8 +154,10 @@
         .hero::after {
             content:"";
             position:absolute;
-            bottom:0; left:0;
-            width:100%; height:140px;
+            bottom:0; 
+            left:0;
+            width:100%; 
+            height:140px;
             background:linear-gradient(to bottom, rgba(0,0,0,0), #0b0b0e);
         }
 
@@ -139,7 +183,7 @@
             padding:40px;
         }
 
-        @media(max-width:900px){
+        @media(max-width:900px) {
             #content {
                 margin-left:0;
                 padding:20px;
@@ -164,6 +208,7 @@
             padding-left:22px;
         }
 
+        /* ANIMATIONS */
         @keyframes heroFade {
             from { opacity:0; transform:translateY(-20px); }
             to   { opacity:1; transform:translateY(0); }
@@ -173,7 +218,6 @@
             0%,100% { filter:drop-shadow(0 0 20px #ff003c); }
             50%     { filter:drop-shadow(0 0 35px #ff1a2e); }
         }
-
     </style>
 </head>
 
@@ -183,17 +227,26 @@
 
 <!-- SIDEBAR -->
 <div id="sidebar">
-    <h2>ENGELS ARCHIVE</h2>
+    <h2>ENGELS WIKI</h2>
 
     <a href="index.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Startseite</a>
     <a href="biografie.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biografie</a>
     <a href="wonderlife_network.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Übersicht</a>
+
+    <!-- LANGUAGE DROPDOWN -->
+    <div id="language-box">
+        <div id="language-dropdown">🌐 Sprache</div>
+        <div id="language-menu">
+            <a href="wonderlife_network.html">🇩🇪 Deutsch</a>
+            <a href="wonderlife_network_en.html">🇬🇧 Englisch</a>
+        </div>
+    </div>
 </div>
 
-<!-- HERO HEADER -->
+<!-- HERO -->
 <div class="hero">
     <img src="assets/logo.png" class="logo" alt="Engels Logo">
-    <h1>WonderLife Network Übersicht</h1>
+    <h1>WonderLife Netzwerk Übersicht</h1>
 </div>
 
 <!-- CONTENT -->
@@ -203,8 +256,8 @@
     <div class="box">
         <p>
             Dies ist die <strong>kompakte Übersicht</strong> aller Projekte und Module des 
-            <strong>WonderLife Network</strong>.  
-            Keine langen Texte – nur klar strukturierte Listen.
+            <strong>WonderLife Networks</strong>.  
+            Klare Struktur – keine langen Texte.
         </p>
     </div>
 
@@ -212,10 +265,10 @@
     <h2>🏙️ Hauptprojekte</h2>
     <div class="box">
         <ul>
-            <li>WonderLife City (RP-Server)</li>
+            <li>WonderLife City (Roleplay-Server)</li>
             <li>WonderLife Studios (Media & Grafik)</li>
             <li>WonderLife FM (Community Radio)</li>
-            <li>WonderLife Development (Bots & Tools)</li>
+            <li>WonderLife Development (Bots & Automationen)</li>
         </ul>
     </div>
 
@@ -223,10 +276,10 @@
     <h2>📦 Weitere Netzwerk-Module</h2>
     <div class="box">
         <ul>
-            <li>WonderLife Routen</li>
+            <li>WonderLife Routen (Wirtschaft & Economy)</li>
             <li>WonderLife Logs</li>
             <li>WonderLife Entbannungssystem</li>
-            <li>WonderLife Team Management</li>
+            <li>WonderLife Team-Management</li>
             <li>WonderLife Dashboards</li>
         </ul>
     </div>
@@ -252,26 +305,33 @@
         </ul>
     </div>
 
-    <!-- TECHNIK -->
+    <!-- TECH -->
     <h2>🧑‍💻 Technische Systeme</h2>
     <div class="box">
         <ul>
             <li>Linux Server Cluster</li>
             <li>Systemd Services</li>
-            <li>Monitoring Systeme</li>
-            <li>NextJS Dashboards</li>
-            <li>API Integrationen (Twitch, Discord, uvm.)</li>
+            <li>Monitoring & Status Systeme</li>
+            <li>NextJS Dashboard-Struktur</li>
+            <li>API Integrationen (Twitch, Discord uvm.)</li>
         </ul>
     </div>
 
 </div>
 
 <script>
+/* Mobile menu */
 const btn = document.getElementById("mobile-menu-btn");
 const sidebar = document.getElementById("sidebar");
-
 btn.addEventListener("click", () => {
     sidebar.classList.toggle("active");
+});
+
+/* Language dropdown */
+const langDrop = document.getElementById("language-dropdown");
+const langMenu = document.getElementById("language-menu");
+langDrop.addEventListener("click", () => {
+    langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
 });
 </script>
 
