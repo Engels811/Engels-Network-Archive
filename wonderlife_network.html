@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderLife Network Übersicht – Engels Network Archive</title>
+
+    <style>
+        body {
+            margin:0;
+            background:#0a0a0d;
+            font-family:Arial, sans-serif;
+            color:#f1f1f1;
+            line-height:1.6;
+        }
+
+        #mobile-menu-btn {
+            display:none;
+            position:fixed;
+            top:15px; left:15px;
+            padding:10px 14px;
+            background:#ff0099;
+            color:#fff;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:20px;
+            box-shadow:0 0 12px #ff0099;
+            z-index:1000;
+        }
+
+        #sidebar {
+            width:260px;
+            height:100vh;
+            background:#15151a;
+            position:fixed;
+            left:0; top:0;
+            padding:25px 20px;
+            border-right:2px solid #2c003d;
+            overflow-y:auto;
+        }
+
+        #sidebar h2 {
+            color:#ff30d4;
+            text-shadow:0 0 12px #ff30d4;
+        }
+
+        #sidebar a {
+            display:block;
+            padding:10px;
+            margin-bottom:6px;
+            color:#ccc;
+            border-radius:4px;
+            text-decoration:none;
+            transition:.2s;
+        }
+
+        #sidebar a:hover {
+            background:#ff30d455;
+            box-shadow:0 0 10px #ff30d4;
+            color:#fff;
+        }
+
+        @media(max-width:900px){
+            #sidebar {
+                transform:translateX(-280px);
+                transition:.3s;
+                z-index:999;
+            }
+            #sidebar.active {
+                transform:translateX(0);
+            }
+            #mobile-menu-btn {
+                display:block;
+            }
+        }
+
+        #content {
+            margin-left:260px;
+            padding:40px;
+        }
+
+        @media(max-width:900px){
+            #content {
+                margin-left:0;
+                padding:20px;
+            }
+        }
+
+        h1, h2 {
+            color:#ff30d4;
+            text-shadow:0 0 12px #ff30d4;
+        }
+
+        h1 { font-size:42px; margin-bottom:20px; }
+        h2 { font-size:28px; margin-top:35px; }
+
+        .box {
+            background:#15151a;
+            padding:20px;
+            border-radius:6px;
+            border:1px solid #2c003d;
+            box-shadow:0 0 12px #2c003d;
+            margin-bottom:20px;
+        }
+
+        ul {
+            padding-left:22px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="mobile-menu-btn">☰</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+    <h2>ENGELS NETWORK ARCHIVE</h2>
+
+    <h3>🏠 Navigation</h3>
+    <a href="index.html">Startseite</a>
+    <a href="biografie.html">Biografie von Engels811</a>
+    <a href="wonderlife_network.html">WonderLife Übersicht</a>
+</div>
+
+
+<!-- CONTENT -->
+<div id="content">
+
+    <h1>WonderLife Network – Übersicht</h1>
+
+    <div class="box">
+        <p>
+            Dies ist die kompakte Übersicht aller Projekte des <strong>WonderLife Network</strong>.
+            Keine langen Texte – nur strukturierte Listen aller Bereiche, Server, Systeme und Bots.
+        </p>
+    </div>
+
+    <h2>🏙️ Hauptprojekte</h2>
+    <div class="box">
+        <ul>
+            <li>WonderLife City (RP-Server)</li>
+            <li>WonderLife Studios (Media & Grafik)</li>
+            <li>WonderLife FM (Community Radio)</li>
+            <li>WonderLife Development (Bots & Tools)</li>
+        </ul>
+    </div>
+
+    <h2>📦 Weitere Netzwerk-Module</h2>
+    <div class="box">
+        <ul>
+            <li>WonderLife Routen</li>
+            <li>WonderLife Logs</li>
+            <li>WonderLife Entbannungssystem</li>
+            <li>WonderLife Team Management</li>
+            <li>WonderLife Dashboard Systeme</li>
+        </ul>
+    </div>
+
+    <h2>🤖 Bots des Netzwerks</h2>
+    <div class="box">
+        <ul>
+            <li>TwitchRelay Bot</li>
+            <li>Changelog Bot</li>
+            <li>DevSQL Bot</li>
+            <li>Entbannung Bot</li>
+            <li>FiveM SQL Bot</li>
+            <li>Monitor Bot</li>
+            <li>Payment Bot</li>
+            <li>Status API Bot</li>
+            <li>Team Bot</li>
+            <li>Team Update Bot</li>
+            <li>TikTok Bot</li>
+            <li>Twitch Bot</li>
+            <li>Twitch Chat Bot</li>
+            <li>Twitch Clips Bot</li>
+        </ul>
+    </div>
+
+    <h2>🧑‍💻 Technische Systeme</h2>
+    <div class="box">
+        <ul>
+            <li>Linux Server Struktur</li>
+            <li>Systemd Automations</li>
+            <li>Status & Monitoring Systeme</li>
+            <li>Web-Dashboards (NextJS)</li>
+            <li>API-Integrationen (Twitch, Discord uvm.)</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+const btn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("sidebar");
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
