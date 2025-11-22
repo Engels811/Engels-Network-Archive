@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography – ENGELS811 NETWORK WIKI</title>
+
+    <!-- SEO -->
+    <meta name="description" content="The complete biography of Christopher 'Engels811' Engels – Creator, Developer & Founder of the WonderLife Network.">
+    <meta property="og:title" content="Biography – Engels811">
+    <meta property="og:description" content="Career, development, community and vision of creator and developer Engels811.">
+    <meta property="og:image" content="assets/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        body {
+            margin:0;
+            background:#0b0b0e;
+            font-family:Arial, sans-serif;
+            color:#f1f1f1;
+            line-height:1.6;
+            overflow-x:hidden;
+        }
+
+        /* ================= MOBILE MENU BUTTON ================= */
+        #mobile-menu-btn {
+            display:none;
+            position:fixed;
+            top:20px;
+            left:20px;
+            padding:10px 14px;
+            background:#e0002a;
+            color:white;
+            font-size:22px;
+            border-radius:6px;
+            cursor:pointer;
+            z-index:2000;
+            box-shadow:0 0 12px #e0002a;
+        }
+
+        /* ================= SIDEBAR ================= */
+        #sidebar {
+            width:260px;
+            height:100vh;
+            background:#15151a;
+            position:fixed;
+            top:0; left:0;
+            padding:25px 20px;
+            border-right:2px solid #4b0007;
+            overflow-y:auto;
+            box-shadow:2px 0 10px rgba(0,0,0,0.5);
+        }
+
+        #sidebar h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+            margin-bottom:15px;
+        }
+
+        #sidebar a {
+            display:flex;
+            align-items:center;
+            gap:10px;
+            padding:12px;
+            margin-bottom:8px;
+            color:#ccc;
+            text-decoration:none;
+            border-radius:5px;
+            transition:.2s;
+            font-size:15px;
+        }
+
+        #sidebar a:hover {
+            background:#ff1a2e88;
+            color:white;
+            box-shadow:0 0 10px #ff1a2e;
+        }
+
+        #sidebar img.icon {
+            width:18px;
+            opacity:0.8;
+        }
+
+        /* ================= LANGUAGE DROPDOWN ================= */
+        #language-box {
+            margin-top:20px;
+        }
+
+        #language-dropdown {
+            background:#1a1a20;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 6px #4b0007;
+        }
+
+        #language-dropdown:hover {
+            background:#25252c;
+        }
+
+        #language-menu {
+            display:none;
+            margin-top:5px;
+            background:#1a1a20;
+            border:1px solid #4b0007;
+            border-radius:5px;
+            box-shadow:0 0 10px #4b0007;
+        }
+
+        #language-menu a {
+            padding:10px;
+            display:block;
+            color:#ddd;
+        }
+
+        #language-menu a:hover {
+            background:#ff1a2e55;
+            color:white;
+        }
+
+        /* ================= MOBILE SIDEBAR ================= */
+        @media(max-width:900px){
+            #sidebar {
+                transform:translateX(-280px);
+                transition:.3s;
+                z-index:1500;
+            }
+            #sidebar.active {
+                transform:translateX(0);
+            }
+            #mobile-menu-btn {
+                display:block;
+            }
+        }
+
+        /* ================= HERO HEADER ================= */
+        .hero {
+            width:100%;
+            height:420px;
+            background:url("assets/banner.jpg") center/cover no-repeat;
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            animation:heroFade 1.2s ease-out;
+        }
+
+        .hero::after {
+            content:"";
+            position:absolute;
+            bottom:0; left:0;
+            width:100%; height:140px;
+            background:linear-gradient(to bottom, rgba(0,0,0,0), #0b0b0e);
+        }
+
+        .hero img.logo {
+            width:300px;
+            filter:drop-shadow(0 0 25px #ff003c);
+            animation:logoPulse 2.5s infinite ease-in-out;
+            position:relative;
+            z-index:10;
+        }
+
+        .hero h1 {
+            margin-top:20px;
+            font-size:42px;
+            color:white;
+            text-shadow:0 0 20px #ff3050;
+            z-index:10;
+        }
+
+        /* ================= CONTENT ================= */
+        #content {
+            margin-left:260px;
+            padding:40px;
+        }
+
+        @media(max-width:900px){
+            #content {
+                margin-left:0;
+                padding:20px;
+            }
+        }
+
+        .box {
+            background:#15151a;
+            padding:25px;
+            margin-bottom:25px;
+            border-radius:6px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 12px #4b0007;
+        }
+
+        h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+        }
+
+        @keyframes heroFade {
+            from { opacity:0; transform:translateY(-20px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+
+        @keyframes logoPulse {
+            0%,100% { filter:drop-shadow(0 0 20px #ff003c); }
+            50%     { filter:drop-shadow(0 0 35px #ff1a2e); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="mobile-menu-btn">☰</div>
+
+<!-- ================= SIDEBAR ================= -->
+<div id="sidebar">
+    <h2>ENGELS WIKI</h2>
+
+    <a href="index_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Home</a>
+    <a href="biography_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biography</a>
+    <a href="wonderlife_network_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Overview</a>
+
+    <!-- LANG DROPDOWN -->
+    <div id="language-box">
+        <div id="language-dropdown">🌐 Language</div>
+        <div id="language-menu">
+            <a href="biografie.html">🇩🇪 German</a>
+            <a href="biography_en.html">🇬🇧 English</a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+    <img src="assets/logo.png" class="logo" alt="Engels Logo">
+    <h1>Biography of Engels811</h1>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<div id="content">
+
+    <!-- INTRO -->
+    <div class="box">
+        <p>
+            <strong>Christopher “Engels811” Engels</strong> is a German content creator, developer, 
+            and founder of the WonderLife Network.  
+            Known for his red-black neon tech style, deep technical skill and dedication to community-driven
+            projects, he is one of the most recognizable creators within the German FiveM and tech-streaming scene.
+        </p>
+    </div>
+
+    <!-- STREAMING -->
+    <h2>🎮 Streaming & Creator Career</h2>
+    <div class="box">
+        <p>
+            Streaming on Twitch as <strong>“Engels811_TTV”</strong>, he blends gaming, development 
+            and interactive community work.
+        </p>
+
+        <ul>
+            <li>GTA V / FiveM roleplay</li>
+            <li>Police, medic & RP storylines in WonderLife City</li>
+            <li>Live bot development & dashboard programming</li>
+            <li>Community events & collaborative sessions</li>
+            <li>Direct, honest and interactive creator style</li>
+        </ul>
+    </div>
+
+    <!-- WONDERLIFE -->
+    <h2>🏙️ Founder of the WonderLife Network</h2>
+    <div class="box">
+        <p>
+            Since 2022, Engels811 has been building a multi-project creator ecosystem including:
+        </p>
+
+        <ul>
+            <li>WonderLife City (RP server)</li>
+            <li>WonderLife Studios (media & graphics)</li>
+            <li>WonderLife FM (radio)</li>
+            <li>WonderLife Development (bots & automation)</li>
+            <li>Support & moderation systems</li>
+            <li>Logs & unban systems</li>
+            <li>Economy & routes systems</li>
+        </ul>
+
+        <p>He fills multiple roles simultaneously:</p>
+
+        <ul>
+            <li>Network founder & manager</li>
+            <li>Lead developer</li>
+            <li>Server architect</li>
+            <li>Designer & branding lead</li>
+            <li>Streamer & community host</li>
+        </ul>
+    </div>
+
+    <!-- TECH -->
+    <h2>🧑‍💻 Technical Work</h2>
+    <div class="box">
+        <p>Development is a major pillar of his work:</p>
+
+        <ul>
+            <li>Discord bots (Python / Node.js)</li>
+            <li>NextJS dashboards (Prisma, MySQL)</li>
+            <li>Linux server automation</li>
+            <li>Status & monitoring systems</li>
+            <li>Branding, overlays & creator assets</li>
+        </ul>
+
+        <p>Core development values:</p>
+        <ul>
+            <li>Modular architecture</li>
+            <li>Documentation & structure</li>
+            <li>Brand consistency</li>
+            <li>Scalability & reliability</li>
+        </ul>
+    </div>
+
+    <!-- COMMUNITY -->
+    <h2>🫂 Community & Personality</h2>
+    <div class="box">
+        <p>He is known for:</p>
+        <ul>
+            <li>Helpful, supportive mindset</li>
+            <li>Direct and authentic communication</li>
+            <li>Strong leadership qualities</li>
+            <li>Reliability & discipline</li>
+            <li>Community-first development style</li>
+        </ul>
+    </div>
+
+    <!-- STYLE -->
+    <h2>🌟 Visual & Creator Style</h2>
+    <div class="box">
+        <h3>Visual Style</h3>
+        <ul>
+            <li>Red-black neon aesthetic</li>
+            <li>Tech-line patterns</li>
+            <li>Wolf symbolism</li>
+        </ul>
+
+        <h3>Creator Style</h3>
+        <ul>
+            <li>Gaming + Development</li>
+            <li>Live coding</li>
+            <li>Community-driven features</li>
+            <li>Realistic RP storytelling</li>
+        </ul>
+    </div>
+
+    <!-- FUTURE -->
+    <h2>🔮 Future & Vision</h2>
+    <div class="box">
+        <p>
+            Engels811 aims to build a fully integrated creator, gaming and community network —
+            uniting entertainment, technology and collaboration into one ecosystem.
+        </p>
+    </div>
+
+</div>
+
+<script>
+/* Mobile sidebar */
+const btn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("sidebar");
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+
+/* Language dropdown */
+const langDrop = document.getElementById("language-dropdown");
+const langMenu = document.getElementById("language-menu");
+langDrop.addEventListener("click", () => {
+    langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
+});
+</script>
+
+</body>
+</html>
