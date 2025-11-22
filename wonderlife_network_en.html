@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderLife Network Overview – ENGELS811 NETWORK WIKI</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Overview of all projects inside the WonderLife Network by creator and developer Engels811.">
+    <meta property="og:title" content="WonderLife Network Overview">
+    <meta property="og:description" content="All WonderLife Network projects listed in one structured overview.">
+    <meta property="og:image" content="assets/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        body {
+            margin:0;
+            background:#0b0b0e;
+            font-family:Arial, sans-serif;
+            color:#f1f1f1;
+            line-height:1.6;
+            overflow-x:hidden;
+        }
+
+        /* MOBILE MENU BUTTON */
+        #mobile-menu-btn {
+            display:none;
+            position:fixed;
+            top:20px; 
+            left:20px;
+            padding:10px 14px;
+            background:#e0002a;
+            color:white;
+            font-size:22px;
+            border-radius:6px;
+            cursor:pointer;
+            z-index:2000;
+            box-shadow:0 0 12px #e0002a;
+        }
+
+        /* SIDEBAR */
+        #sidebar {
+            width:260px;
+            height:100vh;
+            background:#15151a;
+            position:fixed;
+            top:0; left:0;
+            padding:25px 20px;
+            border-right:2px solid #4b0007;
+            overflow-y:auto;
+            box-shadow:2px 0 10px rgba(0,0,0,0.5);
+            z-index:1300;
+        }
+
+        #sidebar h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+            margin-bottom:15px;
+        }
+
+        #sidebar a {
+            display:flex;
+            align-items:center;
+            gap:10px;
+            padding:12px;
+            margin-bottom:8px;
+            color:#ccc;
+            text-decoration:none;
+            border-radius:5px;
+            transition:.2s;
+            font-size:15px;
+        }
+
+        #sidebar a:hover {
+            background:#ff1a2e88;
+            color:white;
+            box-shadow:0 0 10px #ff1a2e;
+        }
+
+        #sidebar img.icon {
+            width:18px;
+            opacity:0.8;
+        }
+
+        /* LANGUAGE DROPDOWN */
+        #language-box {
+            margin-top:20px;
+        }
+
+        #language-dropdown {
+            background:#1a1a20;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 6px #4b0007;
+        }
+
+        #language-dropdown:hover {
+            background:#25252c;
+        }
+
+        #language-menu {
+            display:none;
+            margin-top:5px;
+            background:#1a1a20;
+            border:1px solid #4b0007;
+            border-radius:5px;
+            box-shadow:0 0 10px #4b0007;
+        }
+
+        #language-menu a {
+            padding:10px;
+            display:block;
+            color:#ddd;
+        }
+
+        #language-menu a:hover {
+            background:#ff1a2e55;
+            color:white;
+        }
+
+        /* MOBILE SIDEBAR */
+        @media(max-width:900px){
+            #sidebar {
+                transform:translateX(-280px);
+                transition:.3s;
+            }
+            #sidebar.active {
+                transform:translateX(0);
+            }
+            #mobile-menu-btn {
+                display:block;
+            }
+        }
+
+        /* HERO HEADER */
+        .hero {
+            width:100%;
+            height:420px;
+            background:url("assets/banner.jpg") center/cover no-repeat;
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            animation:heroFade 1.2s ease-out;
+        }
+
+        .hero::after {
+            content:"";
+            position:absolute;
+            bottom:0; 
+            left:0;
+            width:100%; 
+            height:140px;
+            background:linear-gradient(to bottom, rgba(0,0,0,0), #0b0b0e);
+        }
+
+        .hero img.logo {
+            width:300px;
+            filter:drop-shadow(0 0 25px #ff003c);
+            animation:logoPulse 2.5s infinite ease-in-out;
+            position:relative;
+            z-index:10;
+        }
+
+        .hero h1 {
+            margin-top:20px;
+            font-size:42px;
+            color:white;
+            text-shadow:0 0 20px #ff3050;
+            z-index:10;
+        }
+
+        /* CONTENT */
+        #content {
+            margin-left:260px;
+            padding:40px;
+        }
+
+        @media(max-width:900px) {
+            #content {
+                margin-left:0;
+                padding:20px;
+            }
+        }
+
+        .box {
+            background:#15151a;
+            padding:25px;
+            margin-bottom:25px;
+            border-radius:6px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 12px #4b0007;
+        }
+
+        h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+        }
+
+        ul {
+            padding-left:22px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes heroFade {
+            from { opacity:0; transform:translateY(-20px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+
+        @keyframes logoPulse {
+            0%,100% { filter:drop-shadow(0 0 20px #ff003c); }
+            50%     { filter:drop-shadow(0 0 35px #ff1a2e); }
+        }
+    </style>
+</head>
+<body>
+
+<div id="mobile-menu-btn">☰</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+    <h2>ENGELS WIKI</h2>
+
+    <a href="index_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Home</a>
+    <a href="biography_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biography</a>
+    <a href="wonderlife_network_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Overview</a>
+
+    <!-- LANGUAGE DROPDOWN -->
+    <div id="language-box">
+        <div id="language-dropdown">🌐 Language</div>
+        <div id="language-menu">
+            <a href="wonderlife_network.html">🇩🇪 German</a>
+            <a href="wonderlife_network_en.html">🇬🇧 English</a>
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="assets/logo.png" class="logo" alt="Engels Logo">
+    <h1>WonderLife Network Overview</h1>
+</div>
+
+<!-- CONTENT -->
+<div id="content">
+
+    <!-- INTRO -->
+    <div class="box">
+        <p>
+            This page provides a <strong>clean and compact overview</strong> of all modules,
+            systems and sub-projects inside the <strong>WonderLife Network</strong>.
+        </p>
+    </div>
+
+    <!-- MAIN PROJECTS -->
+    <h2>🏙️ Main Projects</h2>
+    <div class="box">
+        <ul>
+            <li>WonderLife City (RP Server)</li>
+            <li>WonderLife Studios (Media & Graphics)</li>
+            <li>WonderLife FM (Community Radio)</li>
+            <li>WonderLife Development (Bots & Automation)</li>
+        </ul>
+    </div>
+
+    <!-- MODULES -->
+    <h2>📦 Additional Network Modules</h2>
+    <div class="box">
+        <ul>
+            <li>WonderLife Routen (Economy Routes)</li>
+            <li>WonderLife Logs</li>
+            <li>WonderLife Unban System</li>
+            <li>WonderLife Team Management</li>
+            <li>WonderLife Dashboards</li>
+        </ul>
+    </div>
+
+    <!-- BOTS -->
+    <h2>🤖 Bots of the Network</h2>
+    <div class="box">
+        <ul>
+            <li>TwitchRelay Bot</li>
+            <li>Changelog Bot</li>
+            <li>DevSQL Bot</li>
+            <li>Unban Bot</li>
+            <li>FiveM SQL Bot</li>
+            <li>Monitor Bot</li>
+            <li>Payment Bot</li>
+            <li>Status API Bot</li>
+            <li>Team Bot</li>
+            <li>Team Update Bot</li>
+            <li>TikTok Bot</li>
+            <li>Twitch Bot</li>
+            <li>Twitch Chat Bot</li>
+            <li>Twitch Clips Bot</li>
+        </ul>
+    </div>
+
+    <!-- TECHNICAL -->
+    <h2>🧑‍💻 Technical Systems</h2>
+    <div class="box">
+        <ul>
+            <li>Linux Server Cluster</li>
+            <li>Systemd Services</li>
+            <li>Monitoring & Status Systems</li>
+            <li>NextJS Dashboard Infrastructure</li>
+            <li>API Integrations (Twitch, Discord, more)</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+/* Mobile menu */
+const btn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("sidebar");
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+
+/* Language dropdown */
+const langDrop = document.getElementById("language-dropdown");
+const langMenu = document.getElementById("language-menu");
+langDrop.addEventListener("click", () => {
+    langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
+});
+</script>
+
+</body>
+</html>
