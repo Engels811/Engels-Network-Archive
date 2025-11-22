@@ -1,9 +1,309 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>contact_en</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Engels811 Network Archive</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #0b0b0d;
+            font-family: Arial, sans-serif;
+            color: #ddd;
+        }
+
+        /* SIDEBAR */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background: #0e0e11;
+            border-right: 2px solid #4b0007;
+            box-shadow: 0 0 15px #4b0007;
+            padding: 20px;
+        }
+
+        #sidebar h2 {
+            color: #ff3050;
+            text-shadow: 0 0 10px #ff3050;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            margin-bottom: 8px;
+            color: #ccc;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.2s;
+            font-size: 15px;
+        }
+
+        #sidebar a:hover {
+            background: #ff1a2e55;
+            box-shadow: 0 0 10px #ff1a2e;
+            color: #fff;
+        }
+
+        #sidebar .icon {
+            width: 20px;
+            opacity: .85;
+        }
+
+        .divider {
+            height: 2px;
+            background: #4b0007;
+            margin: 20px 0;
+            box-shadow: 0 0 8px #4b0007;
+        }
+
+        /* CONTENT */
+        #content {
+            margin-left: 260px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: #ff3050;
+            text-shadow: 0 0 15px #ff3050;
+            margin-bottom: 25px;
+        }
+
+        .hero {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px #4b0007;
+        }
+
+        .section {
+            background: #111115;
+            border: 1px solid #4b0007;
+            box-shadow: 0 0 10px #4b0007;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #ff3050;
+            font-size: 25px;
+            text-shadow: 0 0 10px #ff3050;
+            margin-bottom: 12px;
+        }
+
+        .section p, .section ul {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* SOCIAL ICONS */
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            margin: 8px;
+            background: #18181c;
+            border: 1px solid #4b0007;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #ccc;
+            box-shadow: 0 0 10px #4b0007;
+            transition: 0.25s;
+        }
+
+        .social-links a:hover {
+            background: #ff003c33;
+            color: #fff;
+            box-shadow: 0 0 12px #ff003c;
+        }
+
+        .social-links img {
+            width: 20px;
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #0a0a0d;
+            border-top: 2px solid #4b0007;
+            margin-top: 60px;
+            box-shadow: 0 -5px 20px #4b0007;
+        }
+
+        footer img {
+            width: 120px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px #ff003c);
+        }
+
+        footer a {
+            color: #bbb;
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media(max-width:820px){
+            #sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+</head>
 <body>
-<div id="sidebar"><!-- SIDEBAR menu snippet --></div>
-<div id="content"><h1>contact_en</h1><p>Content placeholder.</p></div>
-<!-- Footer snippet -->
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+    <h2>ENGELS WIKI</h2>
+
+    <a href="index_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/home.png"> Home</a>
+    <a href="biography_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/user.png"> Biography</a>
+    <a href="wonderlife_network_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/network.png"> WonderLife Network</a>
+    <a href="about_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/info.png"> About</a>
+    <a href="contact_en.html"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/mail.png"> Contact</a>
+
+    <div class="divider"></div>
+
+    <!-- Social -->
+    <a href="https://twitch.tv/engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/twitch.png"> Twitch</a>
+    <a href="https://www.youtube.com/@Engels811_TTV" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/youtube-play.png"> YouTube</a>
+    <a href="https://www.instagram.com/engels811_ttv/" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/instagram-new.png"> Instagram</a>
+    <a href="https://x.com/ttv_engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/twitter.png"> Twitter / X</a>
+    <a href="https://steamcommunity.com/id/engels811_ttv/" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/steam.png"> Steam</a>
+    <a href="https://github.com/Engels811" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/ffffff/github.png"> GitHub</a>
+
+    <div class="divider"></div>
+
+    <div id="language-box">
+        <a href="contact_en.html" style="color:#ccc;">🇬🇧 English</a><br>
+        <a href="contact.html" style="color:#ccc;">🇩🇪 German</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div id="content">
+
+    <div class="hero">
+        <img src="assets/banner.jpg" style="width:100%;">
+    </div>
+
+    <h1>Contact</h1>
+
+    <div class="section">
+        <h2>Get in Touch</h2>
+        <p>
+            You can contact <strong>Engels811</strong> for inquiries related to:
+        </p>
+
+        <ul>
+            <li>WonderLife Network</li>
+            <li>FiveM / RP topics</li>
+            <li>Media & graphic requests</li>
+            <li>Bot development & automation</li>
+            <li>Creator collaborations</li>
+        </ul>
+
+        <p>
+            Choose one of the official social media channels below:
+        </p>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <div class="section">
+
+        <h2>Official Social Links</h2>
+
+        <div class="social-links">
+
+            <a href="https://twitch.tv/engels811" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/twitch.png"> Twitch
+            </a>
+
+            <a href="https://www.youtube.com/@Engels811_TTV" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/youtube-play.png"> YouTube
+            </a>
+
+            <a href="https://www.instagram.com/engels811_ttv/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/instagram-new.png"> Instagram
+            </a>
+
+            <a href="https://x.com/ttv_engels811" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/twitter.png"> X / Twitter
+            </a>
+
+            <a href="https://steamcommunity.com/id/engels811_ttv/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/steam.png"> Steam
+            </a>
+
+            <a href="https://github.com/Engels811" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/github.png"> GitHub
+            </a>
+
+            <a href="https://discord.gg/your-invite-code" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/ffffff/discord-logo.png"> Discord (Main Server)
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT FORM (STATIC) -->
+    <div class="section">
+        <h2>Send a Message (Static)</h2>
+        <p>
+            As this is a static GitHub page, the form cannot send emails directly.  
+            You can still fill it out and copy your message manually.
+        </p>
+
+        <form style="display:flex; flex-direction:column; gap:12px; max-width:450px;">
+            <input type="text" placeholder="Your Name" style="padding:10px; border-radius:6px; border:1px solid #4b0007; background:#0f0f12; color:#ddd;">
+            <input type="email" placeholder="Your Email" style="padding:10px; border-radius:6px; border:1px solid #4b0007; background:#0f0f12; color:#ddd;">
+            <textarea placeholder="Your Message" rows="5" style="padding:10px; border-radius:6px; border:1px solid #4b0007; background:#0f0f12; color:#ddd;"></textarea>
+            <button style="padding:12px; border-radius:6px; background:#4b0007; color:#fff; border:none; cursor:pointer; box-shadow:0 0 10px #ff003c;">
+                Copy Message
+            </button>
+        </form>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <img src="assets/logo.png">
+    <div>ENGELS811 NETWORK WIKI</div>
+
+    <br>
+    <a href="legal_notice_en.html">Legal Notice</a> •
+    <a href="privacy_policy_en.html">Privacy Policy</a> •
+    <a href="contact_en.html">Contact</a> •
+    <a href="about_en.html">About</a>
+
+    <br><br>
+    <div style="color:#777; font-size:13px;">© 2025 Engels811 – All rights reserved.<br>Part of the WonderLife Network.</div>
+</footer>
+
 </body>
 </html>
