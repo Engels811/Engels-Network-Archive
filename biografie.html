@@ -3,67 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografie von Engels811 – Engels Network Archive</title>
+    <title>Biografie – ENGELS NETWORK ARCHIVE</title>
+
+    <meta name="description" content="Die vollständige Biografie von Christopher ‚Engels811‘ Engels – Streamer, Developer & Gründer des WonderLife Network.">
+    <meta property="og:title" content="Biografie – Engels811">
+    <meta property="og:description" content="Karriere, Technik, Community und Vision von Creator & Developer Engels811.">
+    <meta property="og:image" content="assets/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
     <style>
         body {
             margin:0;
-            background:#0a0a0d;
-            color:#f1f1f1;
+            background:#0b0b0e;
             font-family:Arial, sans-serif;
+            color:#f1f1f1;
             line-height:1.6;
+            overflow-x:hidden;
         }
 
-        /* Mobile Button */
+        /* MOBILE MENU BUTTON */
         #mobile-menu-btn {
             display:none;
             position:fixed;
-            top:15px; left:15px;
-            background:#ff0099;
+            top:20px; left:20px;
             padding:10px 14px;
-            border-radius:5px;
+            background:#e0002a;
+            color:white;
+            font-size:22px;
+            border-radius:6px;
             cursor:pointer;
-            color:#fff;
-            font-size:20px;
-            box-shadow:0 0 12px #ff0099;
-            z-index:1000;
+            z-index:2000;
+            box-shadow:0 0 12px #e0002a;
         }
 
-        /* Sidebar */
+        /* SIDEBAR */
         #sidebar {
             width:260px;
-            background:#15151a;
             height:100vh;
+            background:#15151a;
             position:fixed;
-            left:0; top:0;
+            top:0; left:0;
             padding:25px 20px;
-            border-right:2px solid #2c003d;
+            border-right:2px solid #4b0007;
             overflow-y:auto;
-        }
-        #sidebar h2 {
-            color:#ff30d4;
-            text-shadow:0 0 12px #ff30d4;
-        }
-        #sidebar a {
-            display:block;
-            padding:10px;
-            margin-bottom:6px;
-            color:#ccc;
-            border-radius:4px;
-            text-decoration:none;
-            transition:.2s;
-        }
-        #sidebar a:hover {
-            background:#ff30d455;
-            color:#fff;
-            box-shadow:0 0 10px #ff30d4;
+            box-shadow:2px 0 10px rgba(0,0,0,0.5);
         }
 
+        #sidebar h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+            margin-bottom:15px;
+        }
+
+        #sidebar a {
+            display:flex;
+            align-items:center;
+            gap:10px;
+            padding:12px;
+            margin-bottom:8px;
+            color:#ccc;
+            text-decoration:none;
+            border-radius:5px;
+            transition:.2s;
+            font-size:15px;
+        }
+
+        #sidebar a:hover {
+            background:#ff1a2e88;
+            color:white;
+            box-shadow:0 0 10px #ff1a2e;
+        }
+
+        #sidebar img.icon {
+            width:18px;
+            opacity:0.8;
+        }
+
+        /* MOBILE */
         @media(max-width:900px){
             #sidebar {
                 transform:translateX(-280px);
                 transition:.3s;
-                z-index:999;
+                z-index:1500;
             }
             #sidebar.active {
                 transform:translateX(0);
@@ -73,11 +94,50 @@
             }
         }
 
-        /* Content */
+        /* HERO HEADER */
+        .hero {
+            width:100%;
+            height:420px;
+            background:url("assets/banner.jpg") center/cover no-repeat;
+            position:relative;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            animation:heroFade 1.2s ease-out;
+        }
+
+        .hero::after {
+            content:"";
+            position:absolute;
+            bottom:0; left:0;
+            width:100%; height:140px;
+            background:linear-gradient(to bottom, rgba(0,0,0,0), #0b0b0e);
+        }
+
+        .hero img.logo {
+            width:300px;
+            filter:drop-shadow(0 0 25px #ff003c);
+            animation:logoPulse 2.5s infinite ease-in-out;
+            position:relative;
+            z-index:10;
+        }
+
+        .hero h1 {
+            margin-top:20px;
+            font-size:42px;
+            color:white;
+            text-shadow:0 0 20px #ff3050;
+            z-index:10;
+        }
+
+        /* CONTENT */
         #content {
             margin-left:260px;
             padding:40px;
         }
+
         @media(max-width:900px){
             #content {
                 margin-left:0;
@@ -85,24 +145,30 @@
             }
         }
 
-        /* Headings */
-        h1, h2 {
-            color:#ff30d4;
-            text-shadow:0 0 12px #ff30d4;
-        }
-        h1 { font-size:42px; margin-bottom:20px; }
-        h2 { font-size:28px; margin-top:40px; }
-
         .box {
             background:#15151a;
-            padding:20px;
+            padding:25px;
+            margin-bottom:25px;
             border-radius:6px;
-            margin-bottom:20px;
-            border:1px solid #2c003d;
-            box-shadow:0 0 12px #2c003d;
+            border:1px solid #4b0007;
+            box-shadow:0 0 12px #4b0007;
         }
 
-        ul { padding-left:22px; }
+        h2 {
+            color:#ff3050;
+            text-shadow:0 0 12px #ff3050;
+        }
+
+        @keyframes heroFade {
+            from { opacity:0; transform:translateY(-20px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+
+        @keyframes logoPulse {
+            0%,100% { filter:drop-shadow(0 0 20px #ff003c); }
+            50%     { filter:drop-shadow(0 0 35px #ff1a2e); }
+        }
+
     </style>
 </head>
 
@@ -111,122 +177,143 @@
 <div id="mobile-menu-btn">☰</div>
 
 <div id="sidebar">
-    <h2>ENGELS NETWORK ARCHIVE</h2>
+    <h2>ENGELS ARCHIVE</h2>
 
-    <h3>🏠 Navigation</h3>
-    <a href="index.html">Startseite</a>
-    <a href="biografie.html">Biografie von Engels811</a>
-    <a href="wonderlife_network.html">WonderLife Übersicht</a>
+    <a href="index.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Startseite</a>
+    <a href="biografie.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biografie</a>
+    <a href="wonderlife_network.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Übersicht</a>
 </div>
 
+<div class="hero">
+    <img src="assets/logo.png" class="logo" alt="Engels Logo">
+    <h1>Biografie von Engels811</h1>
+</div>
 
 <div id="content">
 
-    <h1>Biografie von Christopher „Engels811“ Engels</h1>
-
-    <!-- EINLEITUNG -->
+    <!-- INTRO -->
     <div class="box">
         <p>
-            <strong>Christopher „Engels811“ Engels</strong> ist ein deutscher Content-Creator, Entwickler und Gründer
-            des stetig wachsenden <strong>WonderLife Network</strong>. 
-        </p>
-
-        <p>
-            Bekannt für seinen markanten Neon-Cyberpunk-Stil, seinen technischen Perfektionismus und die Leidenschaft 
-            für Community-Projekte gehört Engels811 zu den kreativen Köpfen der deutschen FiveM-, Streaming- und 
-            Creator-Szene.
+            <strong>Christopher „Engels811“ Engels</strong> ist ein deutscher Content-Creator, Entwickler 
+            und Gründer des WonderLife Network.  
+            Bekannt für seinen rot-schwarzen Neon-Tech-Stil, sein tiefes technisches Wissen 
+            und seine Community-Arbeit gehört er zu den markantesten Machern der deutschen 
+            FiveM- und Creator-Szene.
         </p>
     </div>
 
     <!-- STREAMING -->
     <h2>🎮 Karriere als Streamer & Creator</h2>
-
     <div class="box">
-        <p>
-            Engels811 streamt regelmäßig auf Twitch unter dem Namen <strong>„Engels811_TTV“</strong>. 
-            Seine Streams verbinden Gaming, Live-Entwicklung und Einblicke in komplexe Community-Projekte.
-        </p>
-
-        <p>Besonders charakteristisch für seine Streams sind:</p>
+        <p>Auf Twitch als <strong>„Engels811_TTV“</strong> aktiv verbindet er Gaming, Coding und Community.</p>
 
         <ul>
             <li>GTA V / FiveM Roleplay</li>
-            <li>WonderLife City – Polizeidienst, Medic, RP-Storylines</li>
-            <li>Live-Coding von Bots, Web-Dashboards und Systemen</li>
-            <li>Interaktive Community-Events & spontane Projekte</li>
-            <li>Ehrlicher Austausch, Humor und technisches Wissen</li>
+            <li>WonderLife City: Polizei, Medic, RP-Storylines</li>
+            <li>Live-Botentwicklung & Dashboard-Programmierung</li>
+            <li>Creator-Events & spontane Projekte</li>
+            <li>Ehrliche Kommunikation & direkter Austausch</li>
         </ul>
-
-        <p>
-            Sein Ziel ist nicht nur zu unterhalten – sondern seine Community mitzunehmen, einzubinden und 
-            gemeinsam etwas aufzubauen, das größer ist als ein einzelner Server.
-        </p>
     </div>
 
-    <!-- WONDERLIFE NETWORK -->
+    <!-- WONDERLIFE -->
     <h2>🏙️ Gründer des WonderLife Network</h2>
+    <div class="box">
+        <p>Seit 2022 baut Engels811 ein eigenes Creator-Ökosystem auf:</p>
 
+        <ul>
+            <li>WonderLife City – RP-Server</li>
+            <li>WonderLife Studios – Media</li>
+            <li>WonderLife FM – Community Radio</li>
+            <li>WonderLife Development – Bots & Tools</li>
+            <li>Support / Logs / Entbannungen / Routen</li>
+        </ul>
+
+        <p>Er selbst erfüllt dabei mehrere Rollen:</p>
+
+        <ul>
+            <li>Founder & Network Manager</li>
+            <li>Lead Developer</li>
+            <li>Server Architekt</li>
+            <li>Designer & Branding-Lead</li>
+            <li>Streamer & Host</li>
+        </ul>
+    </div>
+
+    <!-- TECH -->
+    <h2>🧑‍💻 Technik & Entwicklung</h2>
+    <div class="box">
+        <p>Technik ist der Kern seiner Arbeit:</p>
+
+        <ul>
+            <li>Discord Bots (Python / Node.js)</li>
+            <li>NextJS Dashboards (Prisma, MySQL)</li>
+            <li>Linux-Server & Automationen</li>
+            <li>Status Systeme & Monitoring</li>
+            <li>Branding, Overlays & Creator Assets</li>
+        </ul>
+
+        <p>Grundprinzipien:</p>
+        <ul>
+            <li>Modularer Code</li>
+            <li>Dokumentation & Ordnung</li>
+            <li>Branding Konsistenz</li>
+            <li>Skalierbarkeit</li>
+        </ul>
+    </div>
+
+    <!-- COMMUNITY -->
+    <h2>🫂 Community & Persönlichkeit</h2>
+    <div class="box">
+        <p>Er ist bekannt für:</p>
+        <ul>
+            <li>Hilfsbereitschaft</li>
+            <li>Direkte Kommunikation</li>
+            <li>Humor & Authentizität</li>
+            <li>Verlässlichkeit</li>
+            <li>Führungskompetenz</li>
+        </ul>
+    </div>
+
+    <!-- STYLE -->
+    <h2>🌟 Markenzeichen</h2>
+    <div class="box">
+        <h3>Visuell:</h3>
+        <ul>
+            <li>Rot-Schwarz Neon Style</li>
+            <li>Tech-Linien</li>
+            <li>Wolf-Symbolik</li>
+        </ul>
+
+        <h3>Inhaltlich:</h3>
+        <ul>
+            <li>Gaming + Development</li>
+            <li>Live Coden</li>
+            <li>Community-Projekte</li>
+            <li>Roleplay Storys</li>
+        </ul>
+    </div>
+
+    <!-- FUTURE -->
+    <h2>🔮 Vision</h2>
     <div class="box">
         <p>
-            Seit 2022 baut Engels811 das <strong>WonderLife Network</strong> auf – 
-            ein Creator-, Gaming- und Community-Ökosystem, das mehrere Projekte vereint.
-        </p>
-
-        <p>Bestandteile des Networks sind u. a.:</p>
-
-        <ul>
-            <li>WonderLife City – ein professioneller FiveM-RP-Server</li>
-            <li>WonderLife Studios – Media & Grafikproduktion</li>
-            <li>WonderLife FM – ein Community-Radio-Projekt</li>
-            <li>WonderLife Development – Bots, Tools & Automationen</li>
-            <li>WonderLife Routen & Wirtschaftssysteme</li>
-            <li>WonderLife Logs & Entbannungssysteme</li>
-            <li>Mehrere Team- und Supportstrukturen</li>
-        </ul>
-
-        <p>
-            Engels811 übernimmt dabei gleichzeitig die Rollen von:
-        </p>
-
-        <ul>
-            <li>Network-Gründer</li>
-            <li>Lead-Developer</li>
-            <li>Server-Architekt</li>
-            <li>Branding-Designer</li>
-            <li>Projektmanager</li>
-            <li>Streamer</li>
-        </ul>
-
-        <p>
-            Diese Vielseitigkeit macht WonderLife zu einem der ambitioniertesten Community-Projekte 
-            im deutschsprachigen Roleplay-Bereich.
+            Engels811 verfolgt das Ziel, ein vollständig integriertes Creator-, Gaming- 
+            und Community-Netzwerk aufzubauen, das Technik, Entertainment und 
+            Zusammenarbeit vereint.
         </p>
     </div>
 
-    <!-- TECHNIK -->
-    <h2>🧑‍💻 Technik & Entwicklung</h2>
+</div>
 
-    <div class="box">
-        <p>
-            Engels811 ist ein Entwickler aus Leidenschaft.  
-            Seine tägliche Arbeit umfasst:
-        </p>
+<script>
+const btn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("sidebar");
 
-        <ul>
-            <li>Discord-Bots (Python, NodeJS)</li>
-            <li>Web-Dashboards (NextJS, Prisma, MySQL)</li>
-            <li>Linux-Server & Systemd-Dienste</li>
-            <li>Status- und Monitoring-Systeme</li>
-            <li>Cross-Platform-Automationen (Twitch, TikTok, YT, Insta, X)</li>
-            <li>OBS Overlays, Branding & Creator-Assets</li>
-        </ul>
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+</script>
 
-        <p>
-            Jedes System im WonderLife-Ökosystem folgt klaren Entwicklungsstandards:
-        </p>
-
-        <ul>
-            <li>saubere Modulstruktur</li>
-            <li>Dokumentationen & Readmes</li>
-            <li>Fehlerlogging & Monitoring</li>
-            <li>Brandin
+</body>
+</html>
