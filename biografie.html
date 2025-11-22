@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografie – ENGELS NETWORK ARCHIVE</title>
+    <title>Biografie – ENGELS811 NETWORK WIKI</title>
 
-    <meta name="description" content="Die vollständige Biografie von Christopher ‚Engels811‘ Engels – Streamer, Developer & Gründer des WonderLife Network.">
+    <!-- SEO -->
+    <meta name="description" content="Die vollständige Biografie des Creators & Entwicklers Christopher 'Engels811' Engels.">
     <meta property="og:title" content="Biografie – Engels811">
-    <meta property="og:description" content="Karriere, Technik, Community und Vision von Creator & Developer Engels811.">
+    <meta property="og:description" content="Karriere, Entwicklung, Community & Vision von Engels811.">
     <meta property="og:image" content="assets/banner.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -25,7 +26,8 @@
         #mobile-menu-btn {
             display:none;
             position:fixed;
-            top:20px; left:20px;
+            top:20px;
+            left:20px;
             padding:10px 14px;
             background:#e0002a;
             color:white;
@@ -47,6 +49,7 @@
             border-right:2px solid #4b0007;
             overflow-y:auto;
             box-shadow:2px 0 10px rgba(0,0,0,0.5);
+            z-index:1300;
         }
 
         #sidebar h2 {
@@ -79,7 +82,48 @@
             opacity:0.8;
         }
 
-        /* MOBILE */
+        /* LANGUAGE DROPDOWN */
+        #language-box {
+            margin-top:20px;
+        }
+
+        #language-dropdown {
+            background:#1a1a20;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            border:1px solid #4b0007;
+            box-shadow:0 0 6px #4b0007;
+        }
+
+        #language-dropdown:hover {
+            background:#25252c;
+        }
+
+        #language-menu {
+            display:none;
+            margin-top:5px;
+            background:#1a1a20;
+            border:1px solid #4b0007;
+            border-radius:5px;
+            box-shadow:0 0 10px #4b0007;
+        }
+
+        #language-menu a {
+            padding:10px;
+            display:block;
+            color:#ddd;
+        }
+
+        #language-menu a:hover {
+            background:#ff1a2e55;
+            color:white;
+        }
+
+        /* MOBILE SIDEBAR */
         @media(max-width:900px){
             #sidebar {
                 transform:translateX(-280px);
@@ -157,8 +201,19 @@
         h2 {
             color:#ff3050;
             text-shadow:0 0 12px #ff3050;
+            margin-bottom:10px;
         }
 
+        h3 {
+            color:#ff1a2e;
+            margin-bottom:6px;
+        }
+
+        ul {
+            padding-left:20px;
+        }
+
+        /* ANIMATIONS */
         @keyframes heroFade {
             from { opacity:0; transform:translateY(-20px); }
             to   { opacity:1; transform:translateY(0); }
@@ -168,150 +223,172 @@
             0%,100% { filter:drop-shadow(0 0 20px #ff003c); }
             50%     { filter:drop-shadow(0 0 35px #ff1a2e); }
         }
-
     </style>
 </head>
 
 <body>
 
+<!-- MOBILE MENU -->
 <div id="mobile-menu-btn">☰</div>
 
+<!-- SIDEBAR -->
 <div id="sidebar">
-    <h2>ENGELS ARCHIVE</h2>
+
+    <h2>ENGELS WIKI</h2>
 
     <a href="index.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/home.png"> Startseite</a>
     <a href="biografie.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/user.png"> Biografie</a>
     <a href="wonderlife_network.html"><img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/network.png"> WonderLife Übersicht</a>
+
+    <!-- LANGUAGE SWITCHER -->
+    <div id="language-box">
+        <div id="language-dropdown">🌐 Sprache</div>
+        <div id="language-menu">
+            <a href="biografie.html">🇩🇪 Deutsch</a>
+            <a href="biography_en.html">🇬🇧 Englisch</a>
+        </div>
+    </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <img src="assets/logo.png" class="logo" alt="Engels Logo">
     <h1>Biografie von Engels811</h1>
 </div>
 
+<!-- CONTENT -->
 <div id="content">
 
     <!-- INTRO -->
     <div class="box">
         <p>
-            <strong>Christopher „Engels811“ Engels</strong> ist ein deutscher Content-Creator, Entwickler 
-            und Gründer des WonderLife Network.  
-            Bekannt für seinen rot-schwarzen Neon-Tech-Stil, sein tiefes technisches Wissen 
-            und seine Community-Arbeit gehört er zu den markantesten Machern der deutschen 
-            FiveM- und Creator-Szene.
+            <strong>Christopher „Engels811“ Engels</strong> ist ein deutscher Content-Creator,
+            Entwickler und Gründer des WonderLife Networks – eines wachsenden Multi-Projekt-Ökosystems aus
+            Gaming, Roleplay, Media-Produktion und automatisierten Tools.
         </p>
     </div>
 
     <!-- STREAMING -->
-    <h2>🎮 Karriere als Streamer & Creator</h2>
+    <h2>🎮 Streamer & Creator</h2>
     <div class="box">
-        <p>Auf Twitch als <strong>„Engels811_TTV“</strong> aktiv verbindet er Gaming, Coding und Community.</p>
+        <p>
+            Auf Twitch streamt er als <strong>„Engels811_TTV“</strong> und verbindet Gaming,
+            Live-Entwicklung und Community-Interaktion auf einzigartige Weise.
+        </p>
 
         <ul>
             <li>GTA V / FiveM Roleplay</li>
-            <li>WonderLife City: Polizei, Medic, RP-Storylines</li>
-            <li>Live-Botentwicklung & Dashboard-Programmierung</li>
-            <li>Creator-Events & spontane Projekte</li>
-            <li>Ehrliche Kommunikation & direkter Austausch</li>
+            <li>WonderLife City – Polizei / Medic / RP-Storys</li>
+            <li>Live-Coding (Bots, Dashboards, Systeme)</li>
+            <li>Interaktive Community-Events</li>
+            <li>Ehrlicher, direkter Creator-Stil</li>
         </ul>
     </div>
 
     <!-- WONDERLIFE -->
-    <h2>🏙️ Gründer des WonderLife Network</h2>
+    <h2>🏙️ Gründer des WonderLife Networks</h2>
     <div class="box">
-        <p>Seit 2022 baut Engels811 ein eigenes Creator-Ökosystem auf:</p>
+        <p>
+            Seit 2022 baut Engels811 eines der ambitioniertesten Community-Projekte der Szene auf:
+        </p>
 
         <ul>
-            <li>WonderLife City – RP-Server</li>
-            <li>WonderLife Studios – Media</li>
-            <li>WonderLife FM – Community Radio</li>
-            <li>WonderLife Development – Bots & Tools</li>
-            <li>Support / Logs / Entbannungen / Routen</li>
+            <li>WonderLife City (RP-Server)</li>
+            <li>WonderLife Studios (Media/Graphics)</li>
+            <li>WonderLife FM (Radio)</li>
+            <li>WonderLife Development (Bots & Tools)</li>
+            <li>Logs-Server & Entbannungssystem</li>
+            <li>Routen- und Wirtschaftssysteme</li>
         </ul>
 
-        <p>Er selbst erfüllt dabei mehrere Rollen:</p>
-
+        <p>Seine Rollen:</p>
         <ul>
-            <li>Founder & Network Manager</li>
+            <li>Gründer & Network-Manager</li>
             <li>Lead Developer</li>
-            <li>Server Architekt</li>
-            <li>Designer & Branding-Lead</li>
-            <li>Streamer & Host</li>
+            <li>Server-Architekt</li>
+            <li>Designer</li>
+            <li>Community-Host</li>
         </ul>
     </div>
 
     <!-- TECH -->
     <h2>🧑‍💻 Technik & Entwicklung</h2>
     <div class="box">
-        <p>Technik ist der Kern seiner Arbeit:</p>
+        <p>Seine täglichen Entwicklungsbereiche:</p>
 
         <ul>
-            <li>Discord Bots (Python / Node.js)</li>
-            <li>NextJS Dashboards (Prisma, MySQL)</li>
-            <li>Linux-Server & Automationen</li>
-            <li>Status Systeme & Monitoring</li>
-            <li>Branding, Overlays & Creator Assets</li>
+            <li>Discord-Bots (Python / NodeJS)</li>
+            <li>NextJS Dashboards (Prisma / MySQL)</li>
+            <li>Systemd Services & Linux-Server</li>
+            <li>Status- & Monitoring-Systeme</li>
+            <li>Branding, Media & Creator-Assets</li>
         </ul>
 
         <p>Grundprinzipien:</p>
         <ul>
-            <li>Modularer Code</li>
-            <li>Dokumentation & Ordnung</li>
-            <li>Branding Konsistenz</li>
-            <li>Skalierbarkeit</li>
+            <li>Struktur & Dokumentation</li>
+            <li>Modulare Systeme</li>
+            <li>Stabiles Branding</li>
+            <li>Langfristige Skalierung</li>
         </ul>
     </div>
 
     <!-- COMMUNITY -->
     <h2>🫂 Community & Persönlichkeit</h2>
     <div class="box">
-        <p>Er ist bekannt für:</p>
+        <p>Bekannt für:</p>
         <ul>
-            <li>Hilfsbereitschaft</li>
-            <li>Direkte Kommunikation</li>
-            <li>Humor & Authentizität</li>
-            <li>Verlässlichkeit</li>
-            <li>Führungskompetenz</li>
+            <li>extreme Hilfsbereitschaft</li>
+            <li>direkten & ehrlichen Umgang</li>
+            <li>zuverlässige Teamführung</li>
+            <li>strukturierter Workflow</li>
+            <li>Community-First-Philosophie</li>
         </ul>
     </div>
 
     <!-- STYLE -->
-    <h2>🌟 Markenzeichen</h2>
+    <h2>🌟 Stil & Markenzeichen</h2>
     <div class="box">
-        <h3>Visuell:</h3>
+        <h3>Visuell</h3>
         <ul>
-            <li>Rot-Schwarz Neon Style</li>
-            <li>Tech-Linien</li>
-            <li>Wolf-Symbolik</li>
+            <li>Neon-Rot / Schwarz</li>
+            <li>Tech-Linien & Glow</li>
+            <li>Wolf- / Hacker-Motiv</li>
         </ul>
 
-        <h3>Inhaltlich:</h3>
+        <h3>Inhaltlich</h3>
         <ul>
             <li>Gaming + Development</li>
-            <li>Live Coden</li>
+            <li>Live-Coding</li>
             <li>Community-Projekte</li>
-            <li>Roleplay Storys</li>
+            <li>Realistische RP-Geschichten</li>
         </ul>
     </div>
 
     <!-- FUTURE -->
-    <h2>🔮 Vision</h2>
+    <h2>🔮 Zukunft & Vision</h2>
     <div class="box">
         <p>
-            Engels811 verfolgt das Ziel, ein vollständig integriertes Creator-, Gaming- 
-            und Community-Netzwerk aufzubauen, das Technik, Entertainment und 
-            Zusammenarbeit vereint.
+            Ziel ist es, ein vollständig integriertes Creator-, Gaming- und Community-Netzwerk aufzubauen –
+            alles verbunden in einem einzigen, stetig wachsenden Ökosystem namens <strong>WonderLife</strong>.
         </p>
     </div>
 
 </div>
 
 <script>
+/* Mobile menu */
 const btn = document.getElementById("mobile-menu-btn");
 const sidebar = document.getElementById("sidebar");
-
 btn.addEventListener("click", () => {
     sidebar.classList.toggle("active");
+});
+
+/* Language dropdown */
+const langDrop = document.getElementById("language-dropdown");
+const langMenu = document.getElementById("language-menu");
+langDrop.addEventListener("click", () => {
+    langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
 });
 </script>
 
