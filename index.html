@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGELS NETWORK ARCHIVE – Startseite</title>
+
+    <style>
+        body {
+            margin:0;
+            background:#0a0a0d;
+            font-family:Arial, sans-serif;
+            color:#f1f1f1;
+            line-height:1.6;
+        }
+
+        /* Mobile Menu Button */
+        #mobile-menu-btn {
+            display:none;
+            position:fixed;
+            top:15px;
+            left:15px;
+            padding:10px 14px;
+            background:#ff0099;
+            color:white;
+            font-size:20px;
+            border-radius:5px;
+            cursor:pointer;
+            z-index:1000;
+            box-shadow:0 0 12px #ff0099;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            width:260px;
+            height:100vh;
+            position:fixed;
+            left:0;
+            top:0;
+            background:#15151a;
+            border-right:2px solid #2c003d;
+            padding:25px 20px;
+            overflow-y:auto;
+        }
+
+        #sidebar h2 {
+            color:#ff30d4;
+            text-shadow:0 0 12px #ff30d4;
+        }
+
+        #sidebar a {
+            display:block;
+            padding:10px;
+            margin-bottom:6px;
+            border-radius:4px;
+            color:#ccc;
+            text-decoration:none;
+            transition:.2s;
+        }
+
+        #sidebar a:hover {
+            background:#ff30d455;
+            color:#fff;
+            box-shadow:0 0 10px #ff30d4;
+        }
+
+        /* Content */
+        #content {
+            margin-left:260px;
+            padding:40px;
+        }
+
+        @media(max-width:900px){
+            #sidebar {
+                transform:translateX(-280px);
+                transition:.3s;
+                z-index:999;
+            }
+            #sidebar.active {
+                transform:translateX(0);
+            }
+            #mobile-menu-btn {
+                display:block;
+            }
+            #content {
+                margin-left:0;
+                padding:20px;
+            }
+        }
+
+        h1, h2 {
+            color:#ff30d4;
+            text-shadow:0 0 12px #ff30d4;
+        }
+
+        h1 { font-size:42px; margin-bottom:20px; }
+        h2 { font-size:28px; margin-top:40px; }
+
+        .box {
+            background:#15151a;
+            border:1px solid #2c003d;
+            padding:20px;
+            border-radius:6px;
+            margin-bottom:20px;
+            box-shadow:0 0 12px #2c003d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="mobile-menu-btn">☰</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+
+    <h2>ENGELS NETWORK ARCHIVE</h2>
+
+    <h3>🏠 Navigation</h3>
+    <a href="index.html">Startseite</a>
+    <a href="biografie.html">Biografie von Engels811</a>
+    <a href="wonderlife_network.html">WonderLife Übersicht</a>
+
+</div>
+
+<!-- CONTENT -->
+<div id="content">
+
+    <h1>Willkommen im ENGELS NETWORK ARCHIVE</h1>
+
+    <div class="box">
+        <p>
+            Das <strong>ENGELS NETWORK ARCHIVE</strong> ist das zentrale Wissensarchiv rund um
+            <strong>Christopher „Engels811“ Engels</strong> – Streamer, Entwickler und Gründer des 
+            WonderLife Network.
+        </p>
+
+        <p>
+            Hier findest du:
+        </p>
+
+        <ul>
+            <li>eine ausführliche <strong>Biografie</strong> von Engels811</li>
+            <li>eine kurze und klare Übersicht über das <strong>WonderLife Network</strong></li>
+            <li>Creator-Informationen, Stil-Elemente, Karriere & Zukunft</li>
+        </ul>
+    </div>
+
+    <h2>🔺 Über das Archiv</h2>
+    <div class="box">
+        <p>
+            Das Archiv wurde geschaffen, um die Entwicklung, Karriere, Persönlichkeit und Projekte von
+            <strong>Engels811</strong> in einer strukturierten Form zu dokumentieren.
+            Der Fokus liegt dabei nicht auf Projekten selbst, sondern auf der Person dahinter.
+        </p>
+    </div>
+
+    <h2>📌 Hauptbereiche</h2>
+    <div class="box">
+        <ul>
+            <li><a href="biografie.html">Biografie von Engels811</a> – die vollständige Creator-Story</li>
+            <li><a href="wonderlife_network.html">WonderLife Übersicht</a> – alle Projekte des Netzwerks</li>
+        </ul>
+    </div>
+
+    <h2>🎨 Stil & Vision</h2>
+    <div class="box">
+        <p>
+            Das Archiv folgt dem einzigartigen Neon- / Cyberpunk-Stil von Engels811:
+        </p>
+        <ul>
+            <li>Neon Pink & Neon Violett</li>
+            <li>Holografische UI</li>
+            <li>Wolf-/Hacker-Thematik</li>
+            <li>modernes Creator-Branding</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+const btn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("sidebar");
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
